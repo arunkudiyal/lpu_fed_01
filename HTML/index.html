@@ -106,6 +106,39 @@
             </tbody>
         </table>
 
+        <hr />
+
+        <h3>HTML Forms -</h3>
+        <form action="process.php">
+            <!-- Collect information / data from the user -->
+            <!-- <label>Username - </label> -->
+            <input id="name" name="user-name" type="text" placeholder="enter you username..." /> <br /> <br />
+
+            <!-- <label>User Email - </label> -->
+            <input id="email" name="user-email" type="email" placeholder="enter your email..." /> <br /> <br />
+
+            <!-- <label>User Password - </label> -->
+            <input id="password" name="user-password" type="password" placeholder="enter your password..." /> <br /> <br />
+
+            <label>User DOB - </label>
+            <input id="dob" name="user-dob" type="date" /> <br /> <br />
+
+            <label>User Portfolio - </label>
+            <input name="user-file" type="file" /> <br /> <br />
+
+            <label>User Gender - </label>
+            <select id="gender">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select> <br /> <br />
+
+            <label>Fav Color - </label>
+            <input id="color" type="color" > <br /> <br />
+
+            <input id="submit-btn" type="submit" />
+        </form>
+
         <hr>
 
         <h1>Multi-Media</h1>
@@ -149,6 +182,30 @@
             2022, Copyright, All Rights Reserved!
         </div>
 
+        <!-- HTML5 SEMANTICS -->
+        
+
         <div style="height: 400px;"></div>
+
+        <script>
+            // document.querySelector('#submit-btn').addEventListener('click', (e) => {
+            //     e.preventDefault()
+
+            //     if(document.querySelector('#name').value === '') {
+            //         alert('Please fill the form completely!')
+            //     }
+            //     const data = {
+            //         name: document.querySelector('#name').value,
+            //         email: document.querySelector('#email').value,
+            //         password: document.querySelector('#password').value,
+            //         password: document.querySelector('#password').value,
+            //         dob: document.querySelector('#dob').value,
+            //         gender: document.querySelector('#gender').value,
+            //         color: document.querySelector('#color').value,
+            //     }
+
+            //     console.log(data)
+            // })
+        </script>
     </body>
 </html>
