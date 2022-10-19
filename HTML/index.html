@@ -133,6 +133,10 @@
                 <option>Other</option>
             </select> <br /> <br />
 
+            <input type="radio" > Male <br />
+            <input type="radio" > Female <br />
+            <input type="radio" > Others <br />
+
             <label>Fav Color - </label>
             <input id="color" type="color" > <br /> <br />
 
@@ -164,25 +168,82 @@
         
         <h5>Division -> (div)</h5>
         <!-- Divisions help you create varios sections of the app | Container which contains multiple HTML elements in it -->
-        <div id="header" >
-            <img src="#" alt="LOGO" >
-            <!-- navigation links -->
-            <ul>
-                <li><a href="#"> linkOne </a></li>
-                <li><a href="#"> linkTwo </a></li>
-                <li><a href="#"> linkThree </a></li>
-                <li><a href="#"> linkFour </a></li>
-            </ul>
-            <button>Click Me!</button>
-        </div>
-        SAMPLE TEXT
-        <hr />
-        <div id="footer" >
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam exercitationem magni voluptatibus odio cumque deleniti, <span id="my-sapn" style="background-color: navy; color: white;">veritatis fugiat quis</span> dolores dolor illo dolore ex voluptate vitae.</p>
-            2022, Copyright, All Rights Reserved!
-        </div>
+        <!-- <div id="my-page">
+            <div id="header" >
+                <img src="#" alt="LOGO" >
+                <ul id="nav-bar">
+                    <li><a href="#"> linkOne </a></li>
+                    <li><a href="#"> linkTwo </a></li>
+                    <li><a href="#"> linkThree </a></li>
+                    <li><a href="#"> linkFour </a></li>
+                </ul>
+                <input type="text" placeholder="search..." >
+                <button>Click Me!</button>
+            </div>
+            <hr />
+            <div id="footer" >
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam exercitationem magni voluptatibus odio cumque deleniti, <span id="my-sapn" style="background-color: navy; color: white;">veritatis fugiat quis</span> dolores dolor illo dolore ex voluptate vitae.</p>
+                2022, Copyright, All Rights Reserved!
+            </div>
+        </div> -->
 
-        <!-- HTML5 SEMANTICS -->
+        <!-- HTML5 SEMANTICS - HTML5 Elements -->
+        <!-- Semantics have HTML elements named to tell what they do | They are still containers -->
+        <div id="my-page">
+            <!-- Header Section  -->
+            <header>
+                <!-- Nav Bar -->
+                <nav>
+                    <img src="#" alt="LOGO">
+                    <ul>
+                        <li>link-1</li>
+                        <li>link-2</li>
+                        <li>link-3</li>
+                        <li>link-4</li>
+                    </ul>
+
+                    <input type="text" placeholder="search..." >
+                    <button>Search</button>
+                </nav>
+            </header>
+            <!-- Sidebar Section  -->
+            <div>
+                <aside>
+                    <p>Left Sidebar -</p>
+                    <ul>
+                        <li>Link - 1</li>
+                        <li>Link - 2</li>
+                        <li>Link - 3</li>
+                        <li>Link - 4</li>
+                    </ul>
+                </aside>
+                <aside>
+                    <p>Right Sidebar -</p>
+                    <ul>
+                        <li>Link - 1</li>
+                        <li>Link - 2</li>
+                        <li>Link - 3</li>
+                        <li>Link - 4</li>
+                    </ul>
+                </aside>
+            </div>
+            <!-- Main Section  -->
+            <main>
+                <section id="section - 1">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
+                </section>
+                <section id="section - 2">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
+                </section>
+            </main>
+            <!-- Footer Section  -->
+            <footer>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, velit!</p>
+                <p>2021-22, All Rights Reserved.</p>
+            </footer>
+        </div>
         
 
         <div style="height: 400px;"></div>
