@@ -1,0 +1,42 @@
+/* selector {
+    cssProp: value;
+} */
+
+/* SELECTORS */
+/* 1. Element Selector */
+/* a {
+    color: green;
+} */
+
+/* 2. Id Selectors -> you want to add a specific style to specif element */
+/* #ordered-list {
+    color: brown;
+} */
+
+/* 3. Class Selectors -> you want to add a common style to multiple elements */
+/* .ordered-list {
+    color: pink;
+} */
+
+/* 4. Attribute Selectors - [ ] */
+/* ^ -> starts with
+$ -> ends with
+* -> contains */
+/* Q - I want to color 'a' black if it contains absolute link */
+/* a[href^="https://"] {
+    color: black;
+}
+
+a[href^="./"] {
+    color: purple;
+} */
+
+/* a[href$=".com"] {
+    color: green;
+} */
+
+a[href*="/"] {
+    color: yellow;
+}
+
+/* 5. Pseudo Selectors */

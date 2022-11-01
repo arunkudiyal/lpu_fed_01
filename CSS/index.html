@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <!-- Any info related to the document -->
+    <head>
+        <!-- CSS -> Cascading Style Sheets -->
+        <!-- Types of CSS -> 1. inline  2. internal 3. extenal -->
+
+        <!-- Internal CSS - style as an element -->
+        <!-- selctor {
+            cssProperty: cssValue;
+        } -->
+        <!-- <style>
+            h1 {
+                color: gray;
+            }
+        </style> -->
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="./styles.css" />
+        <meta charset="UTF-8" >
+        <title>Flipkart Clone Page</title>
+    </head>
+    <body>
+        <!-- CSS (style) which is used as an attribute -->
+        <!-- cssProperty: cssValue; -->
+        <!-- <h1 style="color: purple;">My CSS Documnet!</h1> -->
+        <h1>My CSS Documnet!</h1>
+        <hr />
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt quas rem, unde illo qui numquam, maxime eum aliquid inventore saepe aperiam, magnam ullam nesciunt blanditiis laboriosam ratione alias illum id perferendis! Quod quisquam sunt voluptas fuga beatae adipisci tenetur! Totam, aliquid at tenetur harum numquam minima eum eos deserunt beatae, doloribus ut et ex assumenda, natus accusantium. Illo, illum ipsam.</p>
+
+        <a href="https://images.unsplash.com/photo-1503424886307-b090341d25d1?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb">This is an anchor to an image</a> <br />
+        <!-- Absolute Link -->
+        <a href="https://www.google.com" target="_blank" >click here to go to Google</a> <br/>
+
+        <!-- Relative Links -> Link to any file which is a part of the application  -->
+        <a href="./second.html">click here for Second Page</a> <br/>
+
+        <!-- 3. Horizontal Rule (hr) - Self-Ending Elements -->
+        <hr />
+
+        <!-- 4. Images -->
+        <!-- <img src="LINK_OF_THE_IMG" alt="TEXT_DESC_OF_THE_IMAGE" /> -->
+        
+        <img src="https://thumbs.dreamstime.com/b/aerial-view-lago-antorno-dolomites-lake-mountain-landscape-alps-peak-misurina-cortina-di-ampezzo-italy-reflected-103752677.jpg" alt="This is an example image" />
+
+        <hr />
+
+        <img src="./assets/images/my_image.jpg" alt="This is my second image" />
+
+        <hr />
+
+        <h3>HTML Lists - </h3>
+        <!-- Unordered List (ul) -->
+        <h5>Un-Ordered List - </h5>
+        <ul class="ordered-list">
+            <li>List Item - 1</li>
+            <li>List Item - 2</li>
+            <li>List Item - 3</li>
+            <li>List Item - 4</li>
+        </ul>
+
+        <!-- Ordered List (ol) -->
+        <h5>Ordered List - </h5>
+        <ol class="ordered-list" type="1">
+            <li>List Item - 1</li>
+            <li>List Item - 2</li>
+            <li>List Item - 3</li>
+            <li>List Item - 4</li>
+        </ol>
+
+        <hr />
+
+        <h3>HTML Tables</h3>
+
+        <!-- Table -->
+        <table border="1">
+            <!-- Table Heading -->
+            <thead>
+                <!-- Table Head -->
+                <th>Emp Id</th>
+                <th>Emp Name</th>
+                <th>Emp Designation</th>
+                <th>Emp Email</th>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody>
+                <!-- Row - 1 - Table Row -->
+                <tr>
+                    <!-- Table Data -->
+                    <td>APP_01</td>
+                    <td>John Doe</td>
+                    <td>SDE - I</td>
+                    <td>johndoe@company.com</td>
+                </tr>
+
+                <!-- Row - 2 - Table Row -->
+                <tr>
+                    <!-- Table Data -->
+                    <td>APP_02</td>
+                    <td>Steve Potter</td>
+                    <td>SDE - Manager</td>
+                    <td>stevepotter@company.com</td>
+                </tr>
+
+                <!-- Row - 2 - Table Row -->
+                <tr>
+                    <!-- Table Data -->
+                    <td>APP_03</td>
+                    <td>Harry Louis</td>
+                    <td>SDE - II</td>
+                    <td>harrylouis@company.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr />
+
+        <h3>HTML Forms -</h3>
+        <form action="process.php">
+            <!-- Collect information / data from the user -->
+            <!-- <label>Username - </label> -->
+            <input id="name" name="user-name" type="text" placeholder="enter you username..." /> <br /> <br />
+
+            <!-- <label>User Email - </label> -->
+            <input id="email" name="user-email" type="email" placeholder="enter your email..." /> <br /> <br />
+
+            <!-- <label>User Password - </label> -->
+            <input id="password" name="user-password" type="password" placeholder="enter your password..." /> <br /> <br />
+
+            <label>User DOB - </label>
+            <input id="dob" name="user-dob" type="date" /> <br /> <br />
+
+            <label>User Portfolio - </label>
+            <input name="user-file" type="file" /> <br /> <br />
+
+            <label>User Gender - </label>
+            <select id="gender">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select> <br /> <br />
+
+            <input type="radio" > Male <br />
+            <input type="radio" > Female <br />
+            <input type="radio" > Others <br />
+
+            <label>Fav Color - </label>
+            <input id="color" type="color" > <br /> <br />
+
+            <input id="submit-btn" type="submit" />
+        </form>
+
+        <hr>
+
+        <h1>Multi-Media</h1>
+        <!-- Multi-Media -->
+
+        <h3>1. Google Maps</h3>
+        <!-- Google Maps -> https://maps.google.com/ -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6857.578806258135!2d76.80507057718982!3d30.752416546736537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed4412bbdd1d%3A0x6393c6d798b93aa5!2sRock%20Garden%20of%20Chandigarh%2C%20Sector%201%2C%20Chandigarh%2C%20160001!5e0!3m2!1sen!2sin!4v1665891562204!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <hr>
+
+        <h3>YouTube Videos - </h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oq4i11V-qoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <hr />
+
+        <h3>3. Videos -</h3>
+        <video src="./assets/videos/my-video.mp4" style="width: 70%;" controls ></video>
+
+        <h3>Audios -</h3>
+        <audio src="https://www.macaronisoup.com/songs/mp3/AchJa.mp3" controls ></audio>
+
+        <hr />
+        <h3>HTML Entities -</h3>
+        &lt;div id="my-div" &gt; This is my DIV &lt;/div&gt;
+        <hr/>
+
+        <h3>HTML Containers</h3>
+        
+        <h5>Division -> (div)</h5>
+        <div id="my-page">
+            <!-- Header Section  -->
+            <header>
+                <!-- Nav Bar -->
+                <nav>
+                    <img src="#" alt="LOGO">
+                    <ul>
+                        <li>link-1</li>
+                        <li>link-2</li>
+                        <li>link-3</li>
+                        <li>link-4</li>
+                    </ul>
+
+                    <input type="text" placeholder="search..." >
+                    <button>Search</button>
+                </nav>
+            </header>
+            <hr />
+            <!-- Sidebar Section  -->
+            <div>
+                <aside>
+                    <p>Left Sidebar -</p>
+                    <ul>
+                        <li>Link - 1</li>
+                        <li>Link - 2</li>
+                        <li>Link - 3</li>
+                        <li>Link - 4</li>
+                    </ul>
+                </aside>
+                <aside>
+                    <p>Right Sidebar -</p>
+                    <ul>
+                        <li>Link - 1</li>
+                        <li>Link - 2</li>
+                        <li>Link - 3</li>
+                        <li>Link - 4</li>
+                    </ul>
+                </aside>
+            </div>
+            <!-- Main Section  -->
+            <main>
+                <section id="section - 1">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
+                </section>
+                <section id="section - 2">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
+                </section>
+            </main>
+            <hr />
+            <!-- Footer Section  -->
+            <footer>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, velit!</p>
+                <p> &copy; 2021-22, All Rights Reserved.</p>
+            </footer>
+        </div>
+        
+        <script>
+            console.log( document.querySelectorAll('.ordered-list') )
+        </script>
+        <div style="height: 400px;"></div>
+    </body>
+</html>
