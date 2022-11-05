@@ -24,13 +24,17 @@
         <!-- CSS (style) which is used as an attribute -->
         <!-- cssProperty: cssValue; -->
         <!-- <h1 style="color: purple;">My CSS Documnet!</h1> -->
-        <h1>My CSS Documnet!</h1>
+        <h1 id="page-heading">My CSS Documnet!</h1>
+        <!-- <h1>My CSS Documnet! - 2</h1>
+        <h1>My CSS Documnet! - 3</h1>
+        <h1 class="page-heading">My CSS Documnet! - 4</h1>
+        <h1 class="page-heading">My CSS Documnet! - 5</h1> -->
         <hr />
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt quas rem, unde illo qui numquam, maxime eum aliquid inventore saepe aperiam, magnam ullam nesciunt blanditiis laboriosam ratione alias illum id perferendis! Quod quisquam sunt voluptas fuga beatae adipisci tenetur! Totam, aliquid at tenetur harum numquam minima eum eos deserunt beatae, doloribus ut et ex assumenda, natus accusantium. Illo, illum ipsam.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt quas rem, unde illo qui numquam, maxime eum aliquid inventore saepe aperiam, magnam <span id="my-span">ullam nesciunt blanditiis</span> laboriosam ratione alias illum id perferendis! Quod quisquam sunt voluptas fuga beatae adipisci tenetur! Totam, aliquid at tenetur harum numquam minima eum eos deserunt beatae, doloribus ut et ex assumenda, natus accusantium. Illo, illum ipsam.</p>
 
         <a href="https://images.unsplash.com/photo-1503424886307-b090341d25d1?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb">This is an anchor to an image</a> <br />
         <!-- Absolute Link -->
-        <a href="https://www.google.com" target="_blank" >click here to go to Google</a> <br/>
+        <a href="https://www.google.in" target="_blank" >click here to go to Google</a> <br/>
 
         <!-- Relative Links -> Link to any file which is a part of the application  -->
         <a href="./second.html">click here for Second Page</a> <br/>
@@ -52,16 +56,18 @@
         <h3>HTML Lists - </h3>
         <!-- Unordered List (ul) -->
         <h5>Un-Ordered List - </h5>
-        <ul class="ordered-list">
-            <li>List Item - 1</li>
-            <li>List Item - 2</li>
-            <li>List Item - 3</li>
-            <li>List Item - 4</li>
+        <ul>
+            <li class="unordered-list-item">List Item - 1</li>
+            <li class="unordered-list-item">List Item - 2</li>
+            <li class="unordered-list-item">List Item - 3</li>
+            <li class="unordered-list-item">List Item - 4</li>
+            <li class="unordered-list-item">List Item - 5</li>
+            <li class="unordered-list-item">List Item - 6</li>
         </ul>
 
         <!-- Ordered List (ol) -->
         <h5>Ordered List - </h5>
-        <ol class="ordered-list" type="1">
+        <ol id="ordered-list" type="1">
             <li>List Item - 1</li>
             <li>List Item - 2</li>
             <li>List Item - 3</li>
@@ -222,12 +228,12 @@
             <!-- Main Section  -->
             <main>
                 <section id="section - 1">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
+                    <p class="my-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
+                    <p id="para-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
                 </section>
                 <section id="section - 2">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
+                    <p class="my-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eligendi magnam id saepe ad sequi adipisci tempore veritatis. Odio saepe dignissimos quam, ullam nulla, praesentium explicabo nemo facere, minus et quibusdam porro! Reprehenderit quos molestiae impedit. Magni laborum hic ex a quis minus in ipsum.</p>
                 </section>
             </main>
             <hr />

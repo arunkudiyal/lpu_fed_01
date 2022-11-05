@@ -8,9 +8,30 @@
     color: green;
 } */
 
+/* It will sleect all the h1 from the documnet */
+/* h1 {
+    color: green;
+} */
+
+/* p {
+    color: blue;
+} */
+
 /* 2. Id Selectors -> you want to add a specific style to specif element */
 /* #ordered-list {
     color: brown;
+} */
+
+/* #page-heading {
+    color: purple;
+} */
+
+/* #para-2 {
+    color: blue;
+} */
+
+/* #my-span {
+    color: cyan;
 } */
 
 /* 3. Class Selectors -> you want to add a common style to multiple elements */
@@ -18,25 +39,67 @@
     color: pink;
 } */
 
+/* .page-heading {
+    color: gray;
+} */
+
+/* .my-para {
+    color: blue;
+} */
+
 /* 4. Attribute Selectors - [ ] */
 /* ^ -> starts with
 $ -> ends with
 * -> contains */
-/* Q - I want to color 'a' black if it contains absolute link */
-/* a[href^="https://"] {
+/* Q - I want to color 'a' black if it contains absolute link --> href starts with https */
+/* element[attribute = " "] */
+/* a[href^="https:"] {
     color: black;
-}
-
-a[href^="./"] {
-    color: purple;
 } */
 
-/* a[href$=".com"] {
+/* Q - I want to find all the anchor tags which points towards an Indian hosted websites */
+/* a[href$=".in"] {
+    color: red;
+} */
+
+/* Q - I want to find all the anchor tags which contains '/' anyehere in the link */
+/* a[href*="//"] {
     color: green;
 } */
 
-a[href*="/"] {
+/* 5. Pseudo Selectors (:) -> Applied at a certain stage / state */
+/* #page-heading:hover {
+    color: red;
+} */
+
+/* n-th child */
+/* .unordered-list-item:first-child {
     color: yellow;
 }
 
-/* 5. Pseudo Selectors */
+.unordered-list-item:last-child {
+    color: red;
+}
+
+.unordered-list-item:nth-child(3) {
+    color: gray;
+} */
+
+/* .unorder-list-item:nth-child(even) {
+    color: gray;
+} */
+
+
+/* COLORS IN CSS */
+/* 1. named colors
+2. HEX coded colors
+3. rgb colors */
+
+/* p {
+    color: rgb(96, 147, 247);
+} */
+
+/* CSS Gradients */
+/* 1. Liner Gradients */
+
+/* 2. Radial Gradients */
