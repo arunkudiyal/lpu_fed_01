@@ -1,3 +1,8 @@
+body {
+    /* absolute -> 0 to 1 | 1 -> brighest ; 0 -> lightest (white) */
+    background: linear-gradient(to bottom, rgba(138, 187, 242, 1), rgba(138, 187, 242, 0.3));
+}
+
 /* selector {
     cssProp: value;
 } */
@@ -101,5 +106,23 @@ $ -> ends with
 
 /* CSS Gradients */
 /* 1. Liner Gradients */
+#box-one {
+    width: 75%;
+    height: 350px;
+    /* background: yellow; */
+    /* background: url('https://parade.com/.image/t_share/MTkwNTgxMjkxNjk3NDQ4ODI4/marveldisney.jpg');
+    background-size: contain; */
+
+    /* Linear Gradients are created top to bottom by default */
+    /* Directions -> to bottom, to top, to left, to right */
+    /* Cornered Directions -> to top left, to top right, to bottom left, to bottom right */
+    /* 0deg means Top | It always more in a clock-wise direction */
+    background: linear-gradient(0deg, red, yellow, orange, blue, green, white);
+}
 
 /* 2. Radial Gradients */
+#box-two {
+    width: 75%;
+    height: 350px;
+    background: radial-gradient(circle, black, blue, green, yellow);
+}
