@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Way - 1: Download and include CSS usink <link /> -->
+        <!-- <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css"> -->
+
+        <!-- Way - 2: Using Bootstrap CDN (Content Delivery Network) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>My BS Document</title>
+    </head>
+    <body>
+        <!-- BS is styling framework which gives you a pre-written CSS (bootstrap.min.css), which can be included in you HTML document -->
+
+        <!-- 1. Containisation -> 1. container  2. container-fluid -->
+        <div class="container-fluid">
+            <h1 class="page-header text-center">Welcome to Bootstrap! <small> - By : Arun Kudiyal</small> </h1>
+        </div>
+        
+        <div class="container">
+            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla consequuntur atque nostrum exercitationem, at perspiciatis. Dolorum nulla iste id nostrum.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, nostrum sint iusto repellendus quis optio quia illum cupiditate nesciunt iure aspernatur provident voluptatum fugiat molestiae! Repellat repudiandae dolore recusandae, velit enim aperiam officia mollitia qui maxime voluptatem dolorum dignissimos, perspiciatis nulla aliquid eligendi voluptatum? Magni provident officia maxime facere cupiditate?</p>
+
+            <hr />
+
+            <h4>Alignments in BS - </h4>
+            <p class="text-left">Left Align</p>
+            <p class="text-center">Center Align</p>
+            <p class="text-right">Right Align</p>
+
+            <hr />
+
+            <h4>Contextual Classes in BS - <small>A way to write or define a BS Color</small> </h4>
+            <p class="text-primary">Contextual Class - PRIMARY</p>
+            <p class="text-success">Contextual Class - SUCCESS</p>
+            <p class="text-danger">Contextual Class - DANGER</p>
+            <p class="text-info">Contextual Class - INFO</p>
+            <p class="text-warning">Contextual Class - WARNING</p>
+            <p class="text-muted">Contextual Class - MUTED</p>
+            <hr />
+
+            <p class="bg-primary">Contextual Class - PRIMARY</p>
+            <p class="bg-success">Contextual Class - SUCCESS</p>
+            <p class="bg-danger">Contextual Class - DANGER</p>
+            <p class="bg-info">Contextual Class - INFO</p>
+            <p class="bg-warning">Contextual Class - WARNING</p>
+            <!-- NOT FOR BG - <p class="bg-muted">Contextual Class - MUTED</p> -->
+            <hr />
+
+            <h4>Buttons, Anchors & Submits - </h4>
+            <a class="btn btn-primary" href="#">Link</a>
+            <button class="btn btn-success">My Button</button>
+            <input class="btn btn-warning" type="submit" value="Submit Form"> <br /> <br />
+            <button class="btn btn-block btn-info">BLOCK BUTTON</button>
+
+            <hr />
+
+            <h4>Button Sizes - </h4>
+            <button class="btn btn-success btn-sm">My Button - 1</button>
+            <button class="btn btn-info btn-xs">My Button - 2</button>
+            <button class="btn btn-danger btn-lg">My Button - 3</button>
+            <button class="btn" style="background-color: pink;">My Button - 4</button>
+
+            <div style="height: 300px;"></div>
+        </div>
+    </body>
+</html>
