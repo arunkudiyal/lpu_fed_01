@@ -10,6 +10,8 @@
 
         <!-- Way - 2: Using Bootstrap CDN (Content Delivery Network) -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link rel="sty" />
         <title>My BS Document</title>
     </head>
     <body>
@@ -21,9 +23,13 @@
         </div>
         
         <div class="container">
-            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla consequuntur atque nostrum exercitationem, at perspiciatis. Dolorum nulla iste id nostrum.</p>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla consequuntur atque <mark>nostrum exercitationem</mark>, at perspiciatis. Dolorum nulla iste id nostrum.</p>
 
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, nostrum sint iusto repellendus quis optio quia illum cupiditate nesciunt iure aspernatur provident voluptatum fugiat molestiae! Repellat repudiandae dolore recusandae, velit enim aperiam officia mollitia qui maxime voluptatem dolorum dignissimos, perspiciatis nulla aliquid eligendi voluptatum? Magni provident officia maxime facere cupiditate?</p>
+
+            <hr />
+            <h4>Kryboard Tags - </h4>
+            <p> To change the directory in CMD - <kbd><kbd>cd</kbd> + <kbd>.</kbd></kbd> </p>
 
             <hr />
 
@@ -64,6 +70,10 @@
             <button class="btn btn-info btn-xs">My Button - 2</button>
             <button class="btn btn-danger btn-lg">My Button - 3</button>
             <button class="btn" style="background-color: pink;">My Button - 4</button>
+
+            <hr />
+
+            <div style="height: 300px; width: 75%; background: url('../HTML/assets/images/my_image.jpg'); background-size: contain; background-repeat: no-repeat;" id="my-img-container"></div>
 
             <hr />
 
@@ -184,6 +194,73 @@
                     <input class="btn btn-success" id="submit-btn" type="submit" />
                 </div>
             </form>
+
+            <hr />
+
+            <h4>Bootstrap Panels - </h4>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="panel panel-success">
+                        <!-- Panel Header -->
+                        <div class="panel-heading">
+                            <h3>Panel - 1</h3>
+                        </div>
+                        <!-- Panel Body -->
+                        <div class="panel-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio in eos laboriosam fugiat necessitatibus neque accusantium dolorem minus culpa, dolor reiciendis! Distinctio asperiores repellendus tempora modi, sunt molestiae quam illo doloribus explicabo, cupiditate totam maiores obcaecati cumque repellat. Labore ab, explicabo at, quasi tenetur esse laboriosam voluptatibus delectus quaerat, sint dolores veritatis earum porro mollitia ad officia nihil iure dicta quae laudantium iusto! Eaque, fuga.
+                        </div>
+                        <!-- Panel Footer -->
+                        <div class="panel-footer">
+                            &copy; 2022, MyPanels Rights!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="panel panel-danger">
+                        <!-- Panel Header -->
+                        <div class="panel-heading">
+                            <h3>Panel - 2</h3>
+                        </div>
+                        <!-- Panel Body -->
+                        <div class="panel-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio in eos laboriosam fugiat necessitatibus neque accusantium dolorem minus culpa, dolor reiciendis! Distinctio asperiores repellendus tempora modi, sunt molestiae quam illo doloribus explicabo, cupiditate totam maiores obcaecati cumque repellat. Labore ab, explicabo at, quasi tenetur esse laboriosam voluptatibus delectus quaerat, sint dolores veritatis earum porro mollitia ad officia nihil iure dicta quae laudantium iusto! Eaque, fuga.
+                        </div>
+                        <!-- Panel Footer -->
+                        <div class="panel-footer">
+                            &copy; 2022, MyPanels Rights!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <h4>Bootstrap Grids - </h4>
+            <!-- Total Page -> 12 cols -->
+            <!-- 2 divs -> each div -> 6 cols -->
+            <!-- Grid Sizes - sm (small), xs (extra-small), md (medium), lg (large) -->
+            <h5> <u>6 x 6 Grid</u> </h5>
+            <div class="row">
+                <div class="col-xs-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, asperiores illo quia explicabo iure officia dolore consequatur similique eius sapiente error odio molestiae blanditiis est optio suscipit quam id, voluptas corrupti, hic nobis. Vitae, fuga nesciunt iusto ipsam doloremque pariatur cumque? Vero, eligendi facilis earum, obcaecati sunt, perspiciatis omnis iure magnam dolorum reiciendis blanditiis recusandae amet sapiente quia necessitatibus sit.</p>
+                </div>
+                <div class="col-xs-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, asperiores illo quia explicabo iure officia dolore consequatur similique eius sapiente error odio molestiae blanditiis est optio suscipit quam id, voluptas corrupti, hic nobis. Vitae, fuga nesciunt iusto ipsam doloremque pariatur cumque? Vero, eligendi facilis earum, obcaecati sunt, perspiciatis omnis iure magnam dolorum reiciendis blanditiis recusandae amet sapiente quia necessitatibus sit.</p>
+                </div>
+            </div>
+
+            <h5> <u>2 x 8 x 2 Grids</u> </h5>
+            <div class="row">
+                <div class="col-lg-2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis odio, eum voluptate iste similique tenetur suscipit ipsum consequatur excepturi quaerat quo commodi obcaecati placeat sunt laborum vitae corporis debitis reprehenderit.</p>
+                </div>
+                <div class="col-lg-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dolores, aliquam quo atque dolorem, ipsam ea praesentium dolore laboriosam consequatur eaque dicta odit tempore id natus nobis sequi cum. Blanditiis laborum libero consectetur officia nostrum, distinctio quas possimus sequi dignissimos facere ab nesciunt eveniet rerum dolorum consequuntur neque vel, veniam exercitationem quo impedit adipisci omnis, recusandae autem accusantium! Dolores assumenda commodi natus est voluptatum nam ab veritatis earum inventore placeat exercitationem nostrum delectus, similique impedit accusamus blanditiis maiores rem aliquid odit dolorum eius fugit, at quisquam. Quisquam minus vero deserunt ex modi sunt laudantium facilis, animi adipisci distinctio a dignissimos doloremque architecto culpa delectus dolore tempora voluptates maxime veniam possimus explicabo rerum, at optio. Iste sunt dolorum tempore magnam necessitatibus!
+                </div>
+                <div class="col-lg-2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis odio, eum voluptate iste similique tenetur suscipit ipsum consequatur excepturi quaerat quo commodi obcaecati placeat sunt laborum vitae corporis debitis reprehenderit.</p>
+                </div>
+            </div>
 
             <div style="height: 300px;"></div>
         </div>
