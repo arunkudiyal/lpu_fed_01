@@ -142,21 +142,26 @@
 // console.log( newArray[0][1] )
 
 
-// Attributes & Methods from Array Methods
+// Attributes & Methods from Array Class
 
-const ages = [ 12, 15, 9, 10, 14, 19, 21, 9, 4, 5, 30 ]
+// const ages = [ 12, 15, 9, 10, 14, 19, 21, 9, 4, 5, 30 ]
 
 // 1. property -> length
-console.log(`The length of the array is ${ages.length}`)
+// console.log(`The length of the array is ${ages.length}`)
 
 // Methods -->
 
-// i. push(elt) -> add at the enf of the array
-const newLength = ages.push(45)
-console.log(ages)
-console.log(`The new length of the array is ${newLength}`)
+// i.) push(elt) -> add at the enf of the array
+// const newLength = ages.push(45)
+// console.log(ages)
+// console.log(`The new length of the array is ${newLength}`)
 
-// ii. splice(index, deleteCount)
+// ii.) splice(index, deleteCount)
+// console.log(ages)
+// const deletedElts = ages.splice(5)
+// console.log(ages)
+// console.log(`Elements deleted are - ${deletedElts}`);
+
 // const deletedArr = ages.splice(3, 1)
 // console.log(ages)
 // console.log(`The elements deleted are - ${deletedArr}`)
@@ -165,7 +170,50 @@ console.log(`The new length of the array is ${newLength}`)
 // console.log(ages)
 // console.log(`The elements deleted are - ${deletedArr}`)
 
-const deletedArr = ages.splice(3, 4, 100, 200, 300, 400, 500)
+// [ 12, 15, 9, 10, 14, 19, 21, 9, 4, 5, 30 ]
 // [ 12, 15, 9, 100, 200, 300, 400, 500, 9, 4, 5, 30 ]
-console.log(ages)
-console.log(`The elements deleted are - ${deletedArr}`)
+// const deletedArr = ages.splice(3, 4, 100, 200, 300, 400, 500)
+// [ 12, 15, 9, 100, 200, 300, 400, 500, 9, 4, 5, 30 ]
+// console.log(ages)
+// console.log(`The elements deleted are - ${deletedArr}`)
+
+// iii.) indexOf(elt) --> returns the index of the elt in the array
+// const ages = [ 12, 15, 10, 14, 19, 21, 9, 4, 5, 30 ]
+// const anotherAges = [65, 48, 91, 67, 89, 76, 83]
+// const indexOfElt = ages.indexOf(9)
+// console.log(indexOfElt)
+
+// iv.) contact --> combine two or more arrays together & return the combined array
+// const newAgesArr = ages.concat(anotherAges)
+// console.log(newAgesArr)
+// console.log(ages)
+// console.log(anotherAges)
+
+// HOLD :--> HIGHER ORDER ARRAY METHODS
+
+
+// 2. JS OBJECTS --> {  } --> Store you values in the form of keys and values pair
+// SYntax -> const objectName = { key: value }
+
+const user = {
+    name: 'Harry Potter',
+    age: 24,
+    hobbies: ['Doing Magic', 'Getting in Trouble', 'Fighting demons'],
+    email: 'harry.potter@hogwards.com',
+    canVote: true,
+    address: {
+        street: 'Street 4',
+        city: 'London',
+        country: 'United Kingdom'
+    }
+}
+console.log(user)
+
+// Access properties from JS Object (objectName.key)
+console.log(`The email of the user is - ${user.email}`)
+
+// Access the city of the user
+console.log(`The city of the user is - ${user.address.city}`)
+
+// Access the 2nd hobby of the user
+console.log(`The second hobby of the user is -> ${user.hobbies[1]}`)
