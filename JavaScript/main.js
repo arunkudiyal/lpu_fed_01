@@ -180,11 +180,16 @@
 // iii.) indexOf(elt) --> returns the index of the elt in the array
 // const ages = [ 12, 15, 10, 14, 19, 21, 9, 4, 5, 30 ]
 // const anotherAges = [65, 48, 91, 67, 89, 76, 83]
-// const indexOfElt = ages.indexOf(9)
-// console.log(indexOfElt)
+// // const indexOfElt = ages.indexOf(9)
+// // console.log(indexOfElt)
 
-// iv.) contact --> combine two or more arrays together & return the combined array
+// // iv.) contact --> combine two or more arrays together & return the combined array
 // const newAgesArr = ages.concat(anotherAges)
+// const anotherNewArr = anotherAges.concat(ages)
+
+// console.log(newAgesArr)
+// console.log(anotherNewArr)
+
 // console.log(newAgesArr)
 // console.log(ages)
 // console.log(anotherAges)
@@ -195,25 +200,90 @@
 // 2. JS OBJECTS --> {  } --> Store you values in the form of keys and values pair
 // SYntax -> const objectName = { key: value }
 
-const user = {
-    name: 'Harry Potter',
-    age: 24,
-    hobbies: ['Doing Magic', 'Getting in Trouble', 'Fighting demons'],
-    email: 'harry.potter@hogwards.com',
-    canVote: true,
-    address: {
-        street: 'Street 4',
-        city: 'London',
-        country: 'United Kingdom'
-    }
-}
-console.log(user)
+// const user = {
+//     name: 'Harry Potter',
+//     age: 24,
+//     hobbies: ['Doing Magic', 'Getting in Trouble', 'Fighting demons'],
+//     email: 'harry.potter@hogwards.com',
+//     canVote: true,
+//     address: {
+//         street: 'Street 4',
+//         city: 'London',
+//         country: 'United Kingdom'
+//     }
+// }
+// console.log(user)
 
-// Access properties from JS Object (objectName.key)
-console.log(`The email of the user is - ${user.email}`)
+// // Access properties from JS Object (objectName.key)
+// console.log(`The email of the user is - ${user.email}`)
 
-// Access the city of the user
-console.log(`The city of the user is - ${user.address.city}`)
+// // Access the city of the user
+// console.log(`The city of the user is - ${user.address.city}`)
 
-// Access the 2nd hobby of the user
-console.log(`The second hobby of the user is -> ${user.hobbies[1]}`)
+// // Access the 2nd hobby of the user
+// console.log(`The second hobby of the user is -> ${user.hobbies[1]}`)
+
+// // Methods of Objects
+
+// console.log( Object.keys(user) )
+// console.log( Object.values(user) )
+
+// console.log(`The keys of address are - ${Object.keys(user.address)}`)
+
+
+
+// Array of Objects (AoO) :- [ {}, {}, {}, {}, {} ]
+
+// const users = [
+//     {
+//         name: 'User One',
+//         age: 20,
+//         hobbies: ['Dancing', 'Playing DJ'],
+//         email: 'userone@gmail.com',
+//         canVote: true,
+//         address: {
+//             street: 'Street 4',
+//             city: 'London',
+//             country: 'United Kingdom'
+//         }
+//     },
+//     {
+//         name: 'User Two',
+//         age: 17,
+//         hobbies: ['Signing', 'Playing in Concerts'],
+//         email: 'userTwo@gmail.com',
+//         canVote: false,
+//         address: {
+//             street: 'Street 1',
+//             city: 'California',
+//             country: 'USA'
+//         }
+//     },
+//     {
+//         name: 'User Three',
+//         age: 21,
+//         hobbies: ['Coding', 'Attending Hackathons'],
+//         email: 'userThre@gmail.com',
+//         canVote: true,
+//         address: {
+//             street: 'Street 5',
+//             city: 'Cupertino',
+//             country: 'USA'
+//         }
+//     }
+// ]
+
+// Access AoO ->
+// console.log(users)
+// console.log(users[1].address.city)
+// console.log(users[2].hobbies[1])
+
+// JSON --> JS Object Notation --> JSON is a lightweight data-interchange format · JSON is plain text written in JavaScript object notation
+
+// Convert an AoO to JSON --> stringify
+// const apiData = JSON.stringify(users)
+// console.log(apiData)
+
+// // Convert JSON into AoO --> parse()
+// const myAoO = JSON.parse(apiData)
+// console.log(myAoO)
