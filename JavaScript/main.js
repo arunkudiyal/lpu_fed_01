@@ -287,3 +287,35 @@
 // // Convert JSON into AoO --> parse()
 // const myAoO = JSON.parse(apiData)
 // console.log(myAoO)
+
+
+// Q:- Arrays & Objects in JS are refence types. Explain, how?
+
+const arr1 = [ 100, 200, 300, 400, 500 ]
+
+// Copy of arr1
+// arr2 = memLoc(arr1)
+// Spread Operator --> ...
+const arr2 = [ ...arr1 ]
+
+arr2.push(-2)
+arr1.push(-10)
+
+console.log(arr1)
+// [ 100, 200, 300, 400, 500, -1 ]
+console.log(arr2)
+// [ 100, 200, 300, 400, 500 ]
+
+
+const myObj1 = {
+    name: 'User One',
+    age: 20,
+    phone: 123456789
+}
+
+const myObj2 = { ...myObj1 }
+
+myObj1.email = 'useremail@gmail.com'
+
+console.log(myObj1)
+console.log(myObj2)
